@@ -10,7 +10,7 @@ void setup()
 {
 	pinMode(FAN_PIN, INPUT_PULLUP);
 	pinMode(HEADER_PIN, OUTPUT);
-	attachInterrupt(digitalPinToInterrupt(FAN_PIN), set_delay, CHANGE);
+	attachInterrupt(digitalPinToInterrupt(FAN_PIN), set_delay, RISING);
 }
 
 void loop()
